@@ -12,3 +12,12 @@ pass by reference without pointers - swap(int &a, int &b) - while calling the fu
 pass by reference with pointers - swap(int* a, int* b) - here, while calling the function, the addresses have to be involved, and the addresses are passed to the function
 To Read further - https://www.tutorialspoint.com/cplusplus/cpp_pointers.htm
 http://www.cplusplus.com/doc/tutorial/pointers/
+
+
+As a side note - 
+NULL is typically defined as (void *)0 and conversion of NULL to integral types is allowed. So the function call fun(NULL) becomes ambiguous, if there if function overloading - a fun if it takes int and char* values
+nullptr is a keyword that can be used at all places where NULL is expected. Like NULL, nullptr is implicitly convertible and comparable to any pointer type. Unlike NULL, it is not implicitly convertible or comparable to integral types.
+nullptr is convertible to bool
+2 nulls return true, and one null and another non null returns false, < > if one null and other non null also returns false
+
+In C++, the definition of NULL is 0, so there is only an aesthetic difference. NULL is a mcaro for 0 - search for macros in c++
