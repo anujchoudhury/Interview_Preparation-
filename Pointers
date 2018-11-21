@@ -5,4 +5,5 @@ experimenting, I found that
 int c, *pc=NULL;
 c=5;
 *pc=c;
-doesnt work, but if i DONT initialize it to NULL, it works. Why ?
+doesnt work, but if i DONT initialize it to NULL, it works. Why ? - simple enough - garbage value initialization
+void *ptr; // pointer to void
