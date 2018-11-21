@@ -10,3 +10,5 @@ void *ptr; // pointer to void
  
 pass by reference without pointers - swap(int &a, int &b) - while calling the function, arguments are ostensibly the integers, though really, their references are passed, wothout pointers being explicitly involved 
 pass by reference with pointers - swap(int* a, int* b) - here, while calling the function, the addresses have to be involved, and the addresses are passed to the function
+To Read further - https://www.tutorialspoint.com/cplusplus/cpp_pointers.htm
+http://www.cplusplus.com/doc/tutorial/pointers/
